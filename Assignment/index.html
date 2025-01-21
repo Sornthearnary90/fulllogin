@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Employees</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Site Content</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Content management</h1>
+        <p>Welcome to the site map. Here you can find links to all the important sections of the site.</p>
+        <button onclick="viewSiteContent()">View Site Content</button>
+    </main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+        .list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .list li:last-child {
+            border-bottom: none;
+        }
+        .list a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .list a:hover {
+            background-color: #f0f0f0;
+        }
+        .search {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Content management</h1>
+        <div class="search">
+            <input type="text" placeholder="Filter Content management..." />
+        </div>
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Site Content</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+        <div style="text-align: center;">
+            <button>View Site Content</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
